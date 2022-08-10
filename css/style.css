@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-image: linear-gradient(to right, #5462c3, #ba872c);
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 25px 0;
+    width: 100%;
+}
+
+.user-form {
+    width: 350px;
+}
+
+#input {
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#input:focus {
+    border: 1px solid #ba872c;
+    box-shadow: 0 0 5px #ba872c;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.todo-Body {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.todo-item {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: black;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.todo-item:hover {
+    border: 1px solid #ba872c;
+    box-shadow: 0 0 20px #ba872c;
+}
+
+.todo-item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin: 10px 0;
+    }
+
+    #input {
+        width: 100%;
+    }
+
+    .todo-Body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #input {
+        width: 74%;
+    }
+}
+
+@media (max-width: 320px) {
+    #input {
+        width: 60%;
+    }
+}
+
